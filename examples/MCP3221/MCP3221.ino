@@ -13,6 +13,7 @@ void setup() {
     Wire.begin(SDA, SCL);
     mcp3221.init(&Wire);
 #else
+    Wire.begin();
     mcp3221.init();
 #endif
 }
